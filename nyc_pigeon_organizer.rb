@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   new_nyc_pigeon = {}
 
   data.each do |first_attribute, other_attributes|
-    newdata.each do |key,value|
+    other_attributes.each do |key,value|
       value.each do |name|
       if !new_nyc_pigeon.has_key?(name)
         new_nyc_pigeon[name] = {}
